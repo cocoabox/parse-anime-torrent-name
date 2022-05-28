@@ -49,7 +49,7 @@ node . [TORRENT_NAME] [TORRENT_NAME] ...
 example :
 
 ```
-❯❯ node . '[ExampleGroup] Example Title - 01 (BD 1920x1080 x.264 Flac).mkv"' | jq
+❯❯ node . '[ExampleGroup] Example Title - 01 (BD 1920x1080 x.264 Flac).mkv' | jq
 [
   {
     "codec": [
@@ -71,8 +71,8 @@ example :
       "Title",
       "01"
     ],
-    "orig_name": "[ExampleGroup] Example Title - 01 (BD 1920x1080 x.264 Flac).mkv\"",
-    "ext": ".mkv\"",
+    "orig_name": "[ExampleGroup] Example Title - 01 (BD 1920x1080 x.264 Flac).mkv",
+    "ext": ".mkv",
     "title": "Example Title",
     "season": null,
     "episode": 1,

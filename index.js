@@ -1,7 +1,10 @@
+#!/usr/bin/env node
+
+"use strict"; 
+
 const path = require('path');
 
 const BRACKET_REGEX = /(\[(.*?)\]|\((.*?)\)|（(.*?)）|【(.*?)】)/g;
-
 const tag_fields = {
     codec: [/^[Xx]\.?264$/, 'aac', /^[Hh]\.?264$/, /flac(x[0-9]+)?/i, 'x265', 'hevc', /10bits?/, /[0-9]+fps$/, 'AC3'],
     resolution: [/^[0-9]+[Xx][0-9]+$/, /^[0-9]+[Pp]$/, /720/g, /1080/g],
